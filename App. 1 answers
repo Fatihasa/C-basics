@@ -1,0 +1,400 @@
+Ans.1
+
+#include <iostream>
+#include<ctime>
+#include<cstdlib>
+#include<cmath>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+	
+	int x;
+	cout<<"Typ the sequence of X"<<endl;
+	cin>>x;
+	int size=10;
+	int sum=0;
+	
+	for(int i=0;i<size;i++){
+		
+		sum=sum+x;	
+		cout<<sum<<"x"<<" ";
+		
+	}
+	
+}
+----------------------------------------------------------------
+Ans.2
+
+#include <iostream>
+#include<ctime>
+#include<cstdlib>
+#include<cmath>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+	
+	int x;
+	int s;
+	cout<<"Typ the sequence of X :"<<endl;
+	cin>>x;
+	cout<<"Typ the size of sequense :"<<endl;
+	cin>>s;
+	
+	int sum=0;
+	
+	for(int i=0;i<s;i++){
+		
+		sum=sum+x;
+		
+		cout<<sum<<" ";
+		
+	}
+}	
+----------------------------------------------------------------
+Ans.3
+
+#include <iostream>
+#include<ctime>
+#include<cstdlib>
+#include<cmath>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+	
+	float number;
+	
+	cout<<"Typ a number between 1 to 100. I will dived it to 5 :"<<endl;
+	cin>>number;
+	
+	float sum=0;
+	
+	if(1<number & number<100){
+		
+		sum=number/5;
+		cout<<sum;
+	}
+	else{
+		cout<<"you typed a different number or charcter";
+	}
+	
+}	
+----------------------------------------------------------------
+
+Ans.4
+
+#include <iostream>
+#include<ctime>
+#include<cstdlib>
+#include<cmath>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+	
+	cout<<"Typ the size of pattern 0.:";
+	int size;
+	cin>>size;
+	char a='A';
+	
+	for(int i=0;i<size;i++){
+		
+		for(int i=0;i<size;i++){
+			
+			cout<<a;
+			
+		}
+		
+		cout<<endl;
+
+	}
+}
+----------------------------------------------------------------
+
+Ans.5
+
+#include <iostream>
+#include<ctime>
+#include<cstdlib>
+#include<cmath>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+	
+	cout<<"Typ the size of pattern 0.:";
+	int size;
+	cin>>size;
+	char a='A';
+	int size1=size;
+	for(int i=0;i<size;i++){
+		for(int j=0;j<i;j++){
+			cout<<" ";
+		}
+		for(int i=0;i<size1;i++){
+			cout<<a;	
+		}
+		cout<<endl;
+		size1--;
+		}
+}
+----------------------------------------------------------------
+
+Ans.6
+#include <iostream>
+#include<ctime>
+#include<cstdlib>
+#include<cmath>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+	
+		cout<<"Typ the size of pattern 0.:";
+	int size;
+	int j;
+	cin>>size;
+	char a='V';
+	int size1=size;
+	int size2=size;
+	for(int i=0;i<size;i++){
+		for(int i=0;i<size1;i++){
+			cout<<a;
+		}
+		cout<<endl;
+		size1--;
+		}
+	size1+=2;
+		
+	for(int j=0;j<size-1;j++){
+		for(int j=0;j<size1;j++){
+			cout<<a;			
+		}
+		cout<<endl;	
+		size1++;			
+	}
+}
+----------------------------------------------------------------
+Ans.7
+#include<iostream>
+#include<cmath>
+#include<cstdlib>
+
+using namespace std;
+
+int main(int argc, char** argv){
+	
+	int size1,size2;
+	int rows=size1;
+	cout<<"Typ the number of rows at table:";
+	cin>>size1;
+	cout<<"Typ the number of coloums at table:";
+	cin>>size2;
+	int a=1;
+	
+	for(int i=0;i<=size1-1;i++){
+		
+		for(int i=0;i<size2;i++){
+			
+			cout<<a++;
+			cout<<" ";
+		}
+		cout<<endl;
+		a=a-(size2-1);
+	}
+}
+----------------------------------------------------------------
+Ans.8
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+	
+	
+	int size;
+	cout << "Type the size of the matrix\n";
+	int a=1;
+	cin >> size;
+	cout << "Type your numbers\n";
+	int matrix[size][size];
+	
+	for(int i=0; i<size; i++){
+		
+		for(int j=0;j<size;j++){
+			
+			
+			
+		if(j>i){
+			cout<<"0";
+		}
+		else{
+			cout<<a;
+		}
+	 }
+		cout<<endl;
+		a++;
+	}
+}
+----------------------------------------------------------------
+Ans.9
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+	
+	int size;
+	cout << "Type the size of the matrix\n";
+	int a=1;
+	cin >> size;
+	cout << "Type your numbers\n";
+	int matrix[size][size];
+	
+	for(int i=0; i<size; i++){
+		
+		for(int j=0;j<size;j++){
+			
+		if(j>i){
+			cout<<"0";
+		}
+		else{
+			cout<<a;
+		}
+		}
+		cout<<endl;
+		a++;
+	}
+}
+----------------------------------------------------------------
+Ans.10
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+	
+	
+	int size;
+	cout << "Type the size of the matrix\n";
+	int a=1;
+	cin >> size;
+	cout << "Type your numbers\n";
+
+	for(int i=0; i<size; i++){
+		
+		for(int j=0;j<size;j++){
+			
+			if(i==j){
+			cout<<a;
+			a++;
+			}
+			else{
+			cout<<"0";
+			}
+		}
+		cout<<endl;
+	}
+}
+----------------------------------------------------------------
+Ans.11
+#include<iostream>
+#include<cmath>
+#include<cstdlib>
+
+using namespace std;
+
+int main(int argc, char** argv){
+	
+	int size1,size2;
+	int rows=size1;
+	cout<<"Typ the number of rows at table:";
+	cin>>size1;
+	cout<<"Typ the number of coloums at table:";
+	cin>>size2;
+	
+	int c=1;
+	int d=2;
+	int k=2;
+	int f=0;
+	
+	for(int i=1;i<=size1;i++){
+		
+		for(int j=1;j<=size2;j++){
+			
+			if(i==j || j>i){
+				cout<<c;
+				cout<<" ";
+				c++;
+			}
+			else if(i>j){
+				cout<<d;
+				cout<<" ";
+				d++;
+			}
+		}
+		c=1;
+		cout<<endl;
+	}			
+}
+----------------------------------------------------------------
+Ans.12
+#include<iostream>
+#include<cstdlib>
+
+using  namespace std;
+
+int main(int argc,char** argv){
+	
+	int a=5;
+	int b=5;
+	int c=4;
+	int d=4;
+	
+	for(int i=0;i<a;i++){
+		for(int j=0;j<b;j++){
+			if(j>i){
+				cout<<" ";
+			}
+			else {
+				cout<<"*";
+			}
+		}
+	cout<<endl;
+	}
+	for(int i=0;i<d;i++){
+		for(int j=0;j<c;j++){
+			
+			cout<<"*";
+		}
+	cout<<endl;
+	c--;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
